@@ -104,9 +104,33 @@ hr {
 
 /*------- courses styles
 ---------------- */
+.course {
+    background-color: white;
+
+
+    padding: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 5px 5px 10px lightgray;
+
+
+
+}
+
+
+
+
+
+
+
 .courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+
+
 }
 
 .course .course-banner img {
@@ -148,11 +172,13 @@ hr {
     .courses {
 
         grid-template-columns: repeat(1, 1fr);
+
     }
 
     .player,
     .blog {
         flex-direction: column;
+
     }
 }
 
@@ -168,7 +194,8 @@ tablet devices
     .courses {
         grid-template-columns: repeat(2, 1fr);
     }
-.blogs{
-    grid-template-columns: repeat(1,1fr);
-}
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
